@@ -30,7 +30,7 @@
 
 ```yml 
 "merchant_no": "商户号"
-"order_time": "请求时间"
+"order_time": "请求时间,时间格式为：yyyyMMddHHmmss"
 "order_money": "订单金额,单位元"
 "product_name": "商品名称"
 "pay_type_id": "支付码,参考文档底部 支付码"
