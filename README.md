@@ -63,7 +63,6 @@
 "order_time": "请求时间"
 "order_money": "订单金额,单位元"
 "product_name": "商品名称"
-"pay_type_id": " 支付码,参考平台后台支付类型管理的支付码"
 "order_no": "商户交易号（订单号）,商户自己平台的订单号"
 "platformNo": "平台订单号"
 "platformPayStatus": "参考下面 status状态说明"
