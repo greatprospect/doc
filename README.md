@@ -1,6 +1,6 @@
 
 
-## API工整对接文档V2.3.1
+## 宏程支付对接文档
 
   
 
@@ -10,7 +10,8 @@
 
 * 所有参数,除了sign,其它参数都参与签名
 * 所有参数都按照ASCII码正序排序，按照key1=value1&key2=value2&......keyn=valuen的方式排序，得到待签名字符串
-* 以上拼接的字符串，后面拼接上{payKey}后md5加密，得到sign值
+* **MD5方式**：以上拼接的字符串,后面拼接上{payKey}后md5加密,得到sign值比较签名
+* **RSA方式**：以上拼接的字符串，使用您的私钥进行加密，得到的签名作为sign值
 * 返回数据分为content和message,content包含返回数据与跳转地址等,message只包含描述信息,只能用于显示
 * post提交数据,返回json数据
 * form表单post提交,跳转
@@ -21,7 +22,8 @@
 
 * 所有参数,除了sign,其它参数都参与验签
 * 所有参数都按照ASCII码正序排序,按照key1=value1&key2=value2&......keyn=valuen的方式排序,得到待签名字符串
-* 以上拼接的字符串,后面拼接上{payKey}后md5加密,得到sign值比较签名
+* **MD5方式**：以上拼接的字符串,后面拼接上{payKey}后md5加密,得到sign值比较签名
+* **RSA方式**：以上拼接的字符串，使用您的私钥进行加密，得到的签名作为sign值
 
 
 
@@ -60,7 +62,7 @@
 
 ```yml
 "merchant_no": "商户号"
-"order_time": "请求时间"
+"order_time": "请求时间,格式yyyyMMddHHmmss"
 "order_money": "订单金额,单位元"
 "product_name": "商品名称"
 "order_no": "商户交易号（订单号）,商户自己平台的订单号"
