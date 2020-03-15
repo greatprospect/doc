@@ -28,7 +28,17 @@
 
 
 
+## 接口地址
+
+* **支付: http://api.greatprospect.cn/payment/pay**
+* **支付查询: http://api.greatprospect.cn/payment/orderQuery**
+* **代付: http://api.greatprospect.cn/transfer/transferPay**
+* **代付查询: http://api.greatprospect.cn/transfer/transferQuery**
+
+
 ## 支付接口
+
+
 
 ```yml 
 "merchant_no": "商户号"
