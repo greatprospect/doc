@@ -196,6 +196,7 @@ waiting == 处理中
 "merchant_no": "商户号"
 "transfer_money": "订单金额,单位元"
 "transfer_id": "商户交易号（订单号）,商户自己平台的订单号"
+"orderTime": "订单提交时间"
 "platformNo": "平台订单号"
 "platformProxyStatus": "查看status状态说明"
 "platformProxyedTime": "打款成功的时间"
